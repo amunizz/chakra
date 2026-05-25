@@ -30,3 +30,13 @@ document.querySelectorAll(".button-primary").forEach((button) => {
     button.style.setProperty("--y", `${y}px`);
   });
 });
+
+document.querySelectorAll(".bio-accordion").forEach((details) => {
+  const label = details.querySelector("summary span");
+
+  details.addEventListener("toggle", () => {
+    if (label) {
+      label.textContent = details.open ? "Ler menos" : "Ler trajetória completa";
+    }
+  });
+});

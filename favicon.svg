@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Jornada Chakraterapia favicon">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="42%" r="62%">
+      <stop offset="0%" stop-color="#2b1749"/>
+      <stop offset="62%" stop-color="#12081f"/>
+      <stop offset="100%" stop-color="#080612"/>
+    </radialGradient>
+    <linearGradient id="gold" x1="128" y1="112" x2="386" y2="406" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#fff0b0"/>
+      <stop offset="46%" stop-color="#f0b52e"/>
+      <stop offset="100%" stop-color="#a66f1e"/>
+    </linearGradient>
+    <filter id="softGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="7" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <circle cx="256" cy="256" r="232" fill="url(#bg)"/>
+  <circle cx="256" cy="256" r="216" fill="none" stroke="#f0b52e" stroke-width="14"/>
+  <circle cx="256" cy="256" r="142" fill="none" stroke="#f5d783" stroke-width="8" opacity="0.34"/>
+
+  <g fill="url(#gold)" filter="url(#softGlow)">
+    <path d="M256 136c54 61 55 139 0 205-55-66-54-144 0-205Z"/>
+    <path d="M151 241c63-35 118 3 105 100-74-8-119-50-105-100Z"/>
+    <path d="M361 241c-63-35-118 3-105 100 74-8 119-50 105-100Z"/>
+  </g>
+
+  <circle cx="256" cy="274" r="48" fill="#12081f" opacity="0.72"/>
+  <circle cx="256" cy="274" r="31" fill="url(#gold)"/>
+  <circle cx="256" cy="274" r="12" fill="#fff6d8"/>
+</svg>
